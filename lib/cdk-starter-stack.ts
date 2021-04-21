@@ -13,6 +13,10 @@ export class CdkStarterStack extends cdk.Stack {
       runtime: lambda.Runtime.NODEJS_14_X,
       handler: 'main',
       entry: path.join(__dirname, `/../src/my-lambda/index.ts`),
+      bundling: {
+        minify: true,
+        externalModules: ['aws-sdk'],
+      },
     });
   }
 }
