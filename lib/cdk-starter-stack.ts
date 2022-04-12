@@ -18,7 +18,5 @@ export class CdkStarterStack extends cdk.Stack {
         externalModules: ['aws-sdk'],
       },
     });
-
-    console.log(myFunction);
   }
 }

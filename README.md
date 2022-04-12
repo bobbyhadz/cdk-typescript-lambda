@@ -3,6 +3,8 @@
 A repository for an article on
 [bobbyhadz.com](https://bobbyhadz.com/blog/aws-cdk-typescript-lambda)
 
+> If you use CDK version 1, switch to the cdk-v1 branch.
+
 ## How to Use
 
 1. Clone the repository
