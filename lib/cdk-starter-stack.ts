@@ -1,6 +1,6 @@
-import * as lambda from '@aws-cdk/aws-lambda';
-import {NodejsFunction} from '@aws-cdk/aws-lambda-nodejs';
-import * as cdk from '@aws-cdk/core';
+import * as cdk from 'aws-cdk-lib';
+import {NodejsFunction} from 'aws-cdk-lib/aws-lambda-nodejs';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as path from 'path';
 
 export class CdkStarterStack extends cdk.Stack {
@@ -18,5 +18,7 @@ export class CdkStarterStack extends cdk.Stack {
         externalModules: ['aws-sdk'],
       },
     });
+
+    console.log(myFunction);
   }
 }
